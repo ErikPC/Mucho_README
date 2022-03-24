@@ -8,6 +8,8 @@ La entrega será mediante un repositorio adjunto a esta tarea en la que, tal y c
 
 Opcionalmente podéis subir la imagen a docker hub. Finalmente, y también de manera opcional, podéis publicar la API REST siguiendo la filosofía en la parte B de la tarea anterior de NGINX.
 
+# Solucion
+
 ## Dockerfile
 
 He añadido el dockerfile para dockerizar la api y el .gitignore. En este repo no funcionara, para que funcione tienes que ir al repositorio de la [API](https://github.com/ErikPC/API_Gilded_Ollivanders)
