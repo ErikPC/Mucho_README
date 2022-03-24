@@ -1,0 +1,8 @@
+__pycache__
+venv
+.dockerignore
+.gitignore
+dev-requirements.in
+README.md
+pyproject.toml
+tox.ini
