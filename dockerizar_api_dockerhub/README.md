@@ -11,3 +11,17 @@ Opcionalmente podéis subir la imagen a docker hub. Finalmente, y también de ma
 ## Dockerfile
 
 He añadido el dockerfile para dockerizar la api y el .gitignore. En este repo no funcionara, para que funcione tienes que ir al repositorio de la [API](https://github.com/ErikPC/API_Gilded_Ollivanders)
+
+```DockerFile
+FROM python:alpine
+
+WORKDIR /home/app
+
+COPY . .
+
+RUN pip install pip-tools -q
+RUN pip-compile -q
+RUN pip-sync -q
+
+CMD ["python","-m","flask","run","-h","0.0.0.0"]
+```
