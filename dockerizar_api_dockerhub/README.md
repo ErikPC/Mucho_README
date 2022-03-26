@@ -92,7 +92,7 @@ Para empezar nos tendremos que descargar la imagen usando nuestro gran amigo:
 $ docker pull erikpc/ollivanders
 ```
 
-<img src="./docs/digital_pull.png"/>
+<img src="./docs/digital__pull.png"/>
 
 Continuaremos lanzando nuestra imagen en el puerto 5000.
 
@@ -100,8 +100,12 @@ Continuaremos lanzando nuestra imagen en el puerto 5000.
 $ docker run -dp 5000:5000 erikpc/ollivanders
 ```
 
+<img src="./docs/digital_run.png"/>
+
 Nuestra imagen ya esta siendo lanzada en el servidor , asi que vamos a probar con el comando curl a ver. Tener en cuenta que se usa la ip de la VPS.
 
 ```bash
 $ curl http://142.93.143.216:500
 ```
+
+<img src="./docs/digital_curl.png"/>
