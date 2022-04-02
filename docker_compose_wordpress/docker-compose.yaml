@@ -1,0 +1,28 @@
+# marcamos la version de la especificacion de docker-compose
+version: '3.1'
+
+# aqui añadimos las imagenes que vamos a usar con sus configuraciones
+services:
+
+# se ha sacado la plantilla de la configuracion de dockerhub de wordpress
+  wordpress:
+    image: wordpress
+    # definimos el puerto donde corre la imagen
+    ports:
+      - 8080:80
+    environment:
+    # aqui ponemos la configuracion especificada en dockerhub
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: erik
+      WORDPRESS_DB_PASSWORD: 12345678
+      WORDPRESS_DB_NAME: sistemas
+
+  db:
+  # se ha sacado la plantilla de la configuracion de dockerhub de mysql
+    image: mysql:5.7
+    environment:
+    # aqui ponemos la configuracion especificada en dockerhub
+      MYSQL_DATABASE: sistemas
+      MYSQL_USER: erik
+      MYSQL_PASSWORD: 12345678
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
