@@ -14,6 +14,8 @@ Una vez descargado lanzamos la imagen con el siguiente comando
 $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres:alpine
 ```
 
+Os recomiendo cambiar la contraseña
+
 Para meternos dentro del docker usamos:
 
 ```bash
@@ -31,8 +33,6 @@ Y para meternos en postgres usamos:
 ```bash
 $ psql
 ```
-
-## Os recomiendo cambiar la contraseña
 
 Postgres literal
 
